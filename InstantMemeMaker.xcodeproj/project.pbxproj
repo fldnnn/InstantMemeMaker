@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		319586C5294CE9C800A80188 /* RandomMemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586C4294CE9C700A80188 /* RandomMemeViewController.swift */; };
+		319586C7294CE9DA00A80188 /* RandomMemeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586C6294CE9DA00A80188 /* RandomMemeRouter.swift */; };
+		319586C9294CE9E400A80188 /* RandomMemeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586C8294CE9E400A80188 /* RandomMemeInteractor.swift */; };
+		319586CB294CE9EE00A80188 /* RandomMemePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586CA294CE9EE00A80188 /* RandomMemePresenter.swift */; };
+		319586CD294CEA0900A80188 /* RandomMemeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586CC294CEA0900A80188 /* RandomMemeContract.swift */; };
+		319586D0294CEA1F00A80188 /* RandomMemeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586CF294CEA1F00A80188 /* RandomMemeEntity.swift */; };
+		319586D3294CEE1000A80188 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 319586D2294CEE1000A80188 /* Alamofire */; };
+		319586D6294CEE2C00A80188 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 319586D5294CEE2C00A80188 /* Kingfisher */; };
 		D55D0BBF294CD1D200FECB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D0BBE294CD1D200FECB80 /* AppDelegate.swift */; };
 		D55D0BC1294CD1D200FECB80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D0BC0294CD1D200FECB80 /* SceneDelegate.swift */; };
 		D55D0BC3294CD1D200FECB80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D0BC2294CD1D200FECB80 /* ViewController.swift */; };
@@ -16,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		319586C4294CE9C700A80188 /* RandomMemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeViewController.swift; sourceTree = "<group>"; };
+		319586C6294CE9DA00A80188 /* RandomMemeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeRouter.swift; sourceTree = "<group>"; };
+		319586C8294CE9E400A80188 /* RandomMemeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeInteractor.swift; sourceTree = "<group>"; };
+		319586CA294CE9EE00A80188 /* RandomMemePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemePresenter.swift; sourceTree = "<group>"; };
+		319586CC294CEA0900A80188 /* RandomMemeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeContract.swift; sourceTree = "<group>"; };
+		319586CF294CEA1F00A80188 /* RandomMemeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeEntity.swift; sourceTree = "<group>"; };
 		D55D0BBB294CD1D200FECB80 /* InstantMemeMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantMemeMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55D0BBE294CD1D200FECB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D55D0BC0294CD1D200FECB80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +45,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319586D6294CEE2C00A80188 /* Kingfisher in Frameworks */,
+				319586D3294CEE1000A80188 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		319586C3294CE97800A80188 /* RandomMeme */ = {
+			isa = PBXGroup;
+			children = (
+				319586CE294CEA0D00A80188 /* Response */,
+				319586C4294CE9C700A80188 /* RandomMemeViewController.swift */,
+				319586C6294CE9DA00A80188 /* RandomMemeRouter.swift */,
+				319586C8294CE9E400A80188 /* RandomMemeInteractor.swift */,
+				319586CA294CE9EE00A80188 /* RandomMemePresenter.swift */,
+				319586CC294CEA0900A80188 /* RandomMemeContract.swift */,
+			);
+			path = RandomMeme;
+			sourceTree = "<group>";
+		};
+		319586CE294CEA0D00A80188 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				319586CF294CEA1F00A80188 /* RandomMemeEntity.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
 		D55D0BB2294CD1D100FECB80 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +93,7 @@
 		D55D0BBD294CD1D200FECB80 /* InstantMemeMaker */ = {
 			isa = PBXGroup;
 			children = (
+				319586C3294CE97800A80188 /* RandomMeme */,
 				D55D0BBE294CD1D200FECB80 /* AppDelegate.swift */,
 				D55D0BC0294CD1D200FECB80 /* SceneDelegate.swift */,
 				D55D0BC2294CD1D200FECB80 /* ViewController.swift */,
@@ -83,6 +121,10 @@
 			dependencies = (
 			);
 			name = InstantMemeMaker;
+			packageProductDependencies = (
+				319586D2294CEE1000A80188 /* Alamofire */,
+				319586D5294CEE2C00A80188 /* Kingfisher */,
+			);
 			productName = InstantMemeMaker;
 			productReference = D55D0BBB294CD1D200FECB80 /* InstantMemeMaker.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +153,10 @@
 				Base,
 			);
 			mainGroup = D55D0BB2294CD1D100FECB80;
+			packageReferences = (
+				319586D1294CEE1000A80188 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				319586D4294CEE2C00A80188 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = D55D0BBC294CD1D200FECB80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D55D0BC3294CD1D200FECB80 /* ViewController.swift in Sources */,
+				319586C5294CE9C800A80188 /* RandomMemeViewController.swift in Sources */,
+				319586D0294CEA1F00A80188 /* RandomMemeEntity.swift in Sources */,
 				D55D0BBF294CD1D200FECB80 /* AppDelegate.swift in Sources */,
+				319586CB294CE9EE00A80188 /* RandomMemePresenter.swift in Sources */,
+				319586C7294CE9DA00A80188 /* RandomMemeRouter.swift in Sources */,
 				D55D0BC1294CD1D200FECB80 /* SceneDelegate.swift in Sources */,
+				319586CD294CEA0900A80188 /* RandomMemeContract.swift in Sources */,
+				319586C9294CE9E400A80188 /* RandomMemeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +412,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		319586D1294CEE1000A80188 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		319586D4294CEE2C00A80188 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		319586D2294CEE1000A80188 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 319586D1294CEE1000A80188 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		319586D5294CEE2C00A80188 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 319586D4294CEE2C00A80188 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D55D0BB3294CD1D100FECB80 /* Project object */;
 }
