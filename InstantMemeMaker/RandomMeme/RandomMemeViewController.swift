@@ -7,13 +7,14 @@
 
 import UIKit
 import Kingfisher
-//import MobileCoreServices
+import MessageUI
+import FirebaseAuth
 
 class RandomMemeViewController: UIViewController {
-
+    
     @IBOutlet weak var randomMemeImageView: UIImageView!
-    @IBOutlet weak var randomTextLabel: UILabel!
     @IBOutlet weak var memeTextField: UITextField!
+    @IBOutlet weak var logOutOutlet: UIButton!
     
     var randomMemePresenterObject: ViewToPresenterRandomMemeProcotol?
     var urls = [String]()
@@ -25,7 +26,7 @@ class RandomMemeViewController: UIViewController {
         super.viewDidLoad()
         
         RandomMemeRouter.createModule(ref: self)
-        randomTextLabel.isHidden = true
+        logOutOutlet.cornerButton()
     }
     
     @IBAction func createMeme(_ sender: Any) {
@@ -38,11 +39,11 @@ class RandomMemeViewController: UIViewController {
                     [.font:UIFont(name: "Georgia", size: 50)!,
                      .foregroundColor: UIColor.yellow])
         let sz = randomMemeImageView.image!.size
-        let r = UIGraphicsImageRenderer(size:sz)
+        let r = UIGraphicsImageRenderer(size: sz)
         randomMemeImageView.image = r.image {
                     _ in
-            randomMemeImageView.image!.draw(at:.zero)
-            s2.draw(at: CGPoint(x:30, y:sz.height-150))
+            randomMemeImageView.image!.draw(at: .zero)
+            s2.draw(at: CGPoint(x: 30, y: sz.height-150))
         }
     }
     
@@ -54,7 +55,29 @@ class RandomMemeViewController: UIViewController {
         }
     }
     
-    func config() {
+    @IBAction func onShareButtonPressed(_ sender: Any) {
+        let activityController = UIActivityViewController(activityItems: [randomMemeImageView.image!], applicationActivities: nil)
+        present(activityController, animated: true, completion: nil)
+    }
+    
+    @IBAction func onLogoutButtonPressed(_ sender: Any) {
+        let firebaseAuth = Auth.auth()
+        
+        do {
+            try firebaseAuth.signOut()
+            UserDefaults.standard.set(false, forKey: "status")
+            Switcher.updateRootVC()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+        
+        let viewController = storyboard?.instantiateViewController(identifier: "LoginVC")
+        viewController!.modalPresentationStyle = .fullScreen
+        viewController!.modalTransitionStyle = .flipHorizontal
+        present(viewController!, animated: true, completion: nil)
+    }
+    
+    private func config() {
         url = urls.randomElement()!
         text = texts.randomElement()!
         
@@ -63,9 +86,9 @@ class RandomMemeViewController: UIViewController {
                 self.randomMemeImageView.kf.setImage(with: url)
             }
         }
-        randomTextLabel.text = text
         memeTextField.text = text
     }
+    //let imageData = randomMemeImageView.image?.pngData()
 }
 
 extension RandomMemeViewController: PresenterToViewRandomMemeProcotol {
