@@ -15,6 +15,24 @@
 		319586D0294CEA1F00A80188 /* RandomMemeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586CF294CEA1F00A80188 /* RandomMemeEntity.swift */; };
 		319586D3294CEE1000A80188 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 319586D2294CEE1000A80188 /* Alamofire */; };
 		319586D6294CEE2C00A80188 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 319586D5294CEE2C00A80188 /* Kingfisher */; };
+		319586D9294D3DDF00A80188 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 319586D8294D3DDF00A80188 /* GoogleService-Info.plist */; };
+		319586DC294D3EFE00A80188 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 319586DB294D3EFE00A80188 /* FirebaseAuth */; };
+		319586DE294D3EFE00A80188 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 319586DD294D3EFE00A80188 /* FirebaseDatabase */; };
+		319586E0294D3EFE00A80188 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 319586DF294D3EFE00A80188 /* FirebaseFirestore */; };
+		319586E2294D3EFE00A80188 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 319586E1294D3EFE00A80188 /* FirebaseStorage */; };
+		319586E6294D43F000A80188 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586E5294D43F000A80188 /* SignInViewController.swift */; };
+		319586E8294D43FF00A80188 /* SignInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586E7294D43FF00A80188 /* SignInPresenter.swift */; };
+		319586EA294D440900A80188 /* SignInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586E9294D440900A80188 /* SignInRouter.swift */; };
+		319586EC294D441500A80188 /* SignInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586EB294D441500A80188 /* SignInInteractor.swift */; };
+		319586EE294D442600A80188 /* SignInContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586ED294D442600A80188 /* SignInContract.swift */; };
+		319586F0294D443500A80188 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586EF294D443500A80188 /* SignUpViewController.swift */; };
+		319586F2294D444000A80188 /* SignUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586F1294D444000A80188 /* SignUpInteractor.swift */; };
+		319586F4294D444A00A80188 /* SignUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586F3294D444A00A80188 /* SignUpPresenter.swift */; };
+		319586F6294D445400A80188 /* SignUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586F5294D445400A80188 /* SignUpRouter.swift */; };
+		319586F9294D446800A80188 /* SignUpContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586F8294D446800A80188 /* SignUpContract.swift */; };
+		319586FC294D45C600A80188 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586FB294D45C600A80188 /* UIButton+Ext.swift */; };
+		319586FF294D45E700A80188 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319586FE294D45E700A80188 /* Switcher.swift */; };
+		31958701294D468100A80188 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31958700294D468100A80188 /* String+Ext.swift */; };
 		D55D0BBF294CD1D200FECB80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D0BBE294CD1D200FECB80 /* AppDelegate.swift */; };
 		D55D0BC1294CD1D200FECB80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D0BC0294CD1D200FECB80 /* SceneDelegate.swift */; };
 		D55D0BC3294CD1D200FECB80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55D0BC2294CD1D200FECB80 /* ViewController.swift */; };
@@ -30,6 +48,20 @@
 		319586CA294CE9EE00A80188 /* RandomMemePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemePresenter.swift; sourceTree = "<group>"; };
 		319586CC294CEA0900A80188 /* RandomMemeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeContract.swift; sourceTree = "<group>"; };
 		319586CF294CEA1F00A80188 /* RandomMemeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomMemeEntity.swift; sourceTree = "<group>"; };
+		319586D8294D3DDF00A80188 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		319586E5294D43F000A80188 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		319586E7294D43FF00A80188 /* SignInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPresenter.swift; sourceTree = "<group>"; };
+		319586E9294D440900A80188 /* SignInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRouter.swift; sourceTree = "<group>"; };
+		319586EB294D441500A80188 /* SignInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInInteractor.swift; sourceTree = "<group>"; };
+		319586ED294D442600A80188 /* SignInContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInContract.swift; sourceTree = "<group>"; };
+		319586EF294D443500A80188 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		319586F1294D444000A80188 /* SignUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInteractor.swift; sourceTree = "<group>"; };
+		319586F3294D444A00A80188 /* SignUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPresenter.swift; sourceTree = "<group>"; };
+		319586F5294D445400A80188 /* SignUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRouter.swift; sourceTree = "<group>"; };
+		319586F8294D446800A80188 /* SignUpContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContract.swift; sourceTree = "<group>"; };
+		319586FB294D45C600A80188 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		319586FE294D45E700A80188 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		31958700294D468100A80188 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		D55D0BBB294CD1D200FECB80 /* InstantMemeMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantMemeMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55D0BBE294CD1D200FECB80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D55D0BC0294CD1D200FECB80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +78,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				319586D6294CEE2C00A80188 /* Kingfisher in Frameworks */,
+				319586DC294D3EFE00A80188 /* FirebaseAuth in Frameworks */,
+				319586DE294D3EFE00A80188 /* FirebaseDatabase in Frameworks */,
+				319586E0294D3EFE00A80188 /* FirebaseFirestore in Frameworks */,
 				319586D3294CEE1000A80188 /* Alamofire in Frameworks */,
+				319586E2294D3EFE00A80188 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +110,56 @@
 			path = Response;
 			sourceTree = "<group>";
 		};
+		319586D7294D3CEE00A80188 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				319586E4294D3F7900A80188 /* SignIn */,
+				319586E3294D3F7200A80188 /* SignUp */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		319586E3294D3F7200A80188 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				319586EF294D443500A80188 /* SignUpViewController.swift */,
+				319586F1294D444000A80188 /* SignUpInteractor.swift */,
+				319586F3294D444A00A80188 /* SignUpPresenter.swift */,
+				319586F5294D445400A80188 /* SignUpRouter.swift */,
+				319586F8294D446800A80188 /* SignUpContract.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		319586E4294D3F7900A80188 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				319586E5294D43F000A80188 /* SignInViewController.swift */,
+				319586E7294D43FF00A80188 /* SignInPresenter.swift */,
+				319586E9294D440900A80188 /* SignInRouter.swift */,
+				319586EB294D441500A80188 /* SignInInteractor.swift */,
+				319586ED294D442600A80188 /* SignInContract.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		319586FA294D45B500A80188 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				319586FB294D45C600A80188 /* UIButton+Ext.swift */,
+				31958700294D468100A80188 /* String+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		319586FD294D45D700A80188 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				319586FE294D45E700A80188 /* Switcher.swift */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
 		D55D0BB2294CD1D100FECB80 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +179,9 @@
 		D55D0BBD294CD1D200FECB80 /* InstantMemeMaker */ = {
 			isa = PBXGroup;
 			children = (
+				319586FD294D45D700A80188 /* RootView */,
+				319586FA294D45B500A80188 /* Extensions */,
+				319586D7294D3CEE00A80188 /* Login */,
 				319586C3294CE97800A80188 /* RandomMeme */,
 				D55D0BBE294CD1D200FECB80 /* AppDelegate.swift */,
 				D55D0BC0294CD1D200FECB80 /* SceneDelegate.swift */,
@@ -101,6 +190,7 @@
 				D55D0BC7294CD1D200FECB80 /* Assets.xcassets */,
 				D55D0BC9294CD1D200FECB80 /* LaunchScreen.storyboard */,
 				D55D0BCC294CD1D200FECB80 /* Info.plist */,
+				319586D8294D3DDF00A80188 /* GoogleService-Info.plist */,
 			);
 			path = InstantMemeMaker;
 			sourceTree = "<group>";
@@ -124,6 +214,10 @@
 			packageProductDependencies = (
 				319586D2294CEE1000A80188 /* Alamofire */,
 				319586D5294CEE2C00A80188 /* Kingfisher */,
+				319586DB294D3EFE00A80188 /* FirebaseAuth */,
+				319586DD294D3EFE00A80188 /* FirebaseDatabase */,
+				319586DF294D3EFE00A80188 /* FirebaseFirestore */,
+				319586E1294D3EFE00A80188 /* FirebaseStorage */,
 			);
 			productName = InstantMemeMaker;
 			productReference = D55D0BBB294CD1D200FECB80 /* InstantMemeMaker.app */;
@@ -156,6 +250,7 @@
 			packageReferences = (
 				319586D1294CEE1000A80188 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				319586D4294CEE2C00A80188 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				319586DA294D3EFE00A80188 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = D55D0BBC294CD1D200FECB80 /* Products */;
 			projectDirPath = "";
@@ -172,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D55D0BCB294CD1D200FECB80 /* LaunchScreen.storyboard in Resources */,
+				319586D9294D3DDF00A80188 /* GoogleService-Info.plist in Resources */,
 				D55D0BC8294CD1D200FECB80 /* Assets.xcassets in Resources */,
 				D55D0BC6294CD1D200FECB80 /* Main.storyboard in Resources */,
 			);
@@ -184,14 +280,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319586F6294D445400A80188 /* SignUpRouter.swift in Sources */,
 				D55D0BC3294CD1D200FECB80 /* ViewController.swift in Sources */,
+				319586F4294D444A00A80188 /* SignUpPresenter.swift in Sources */,
 				319586C5294CE9C800A80188 /* RandomMemeViewController.swift in Sources */,
+				319586F2294D444000A80188 /* SignUpInteractor.swift in Sources */,
 				319586D0294CEA1F00A80188 /* RandomMemeEntity.swift in Sources */,
+				319586EE294D442600A80188 /* SignInContract.swift in Sources */,
+				319586EC294D441500A80188 /* SignInInteractor.swift in Sources */,
+				319586E8294D43FF00A80188 /* SignInPresenter.swift in Sources */,
 				D55D0BBF294CD1D200FECB80 /* AppDelegate.swift in Sources */,
+				31958701294D468100A80188 /* String+Ext.swift in Sources */,
 				319586CB294CE9EE00A80188 /* RandomMemePresenter.swift in Sources */,
+				319586FF294D45E700A80188 /* Switcher.swift in Sources */,
+				319586EA294D440900A80188 /* SignInRouter.swift in Sources */,
+				319586F0294D443500A80188 /* SignUpViewController.swift in Sources */,
 				319586C7294CE9DA00A80188 /* RandomMemeRouter.swift in Sources */,
 				D55D0BC1294CD1D200FECB80 /* SceneDelegate.swift in Sources */,
+				319586FC294D45C600A80188 /* UIButton+Ext.swift in Sources */,
 				319586CD294CEA0900A80188 /* RandomMemeContract.swift in Sources */,
+				319586F9294D446800A80188 /* SignUpContract.swift in Sources */,
+				319586E6294D43F000A80188 /* SignInViewController.swift in Sources */,
 				319586C9294CE9E400A80188 /* RandomMemeInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -322,7 +431,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,6 +539,14 @@
 				minimumVersion = 6.0.0;
 			};
 		};
+		319586DA294D3EFE00A80188 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -442,6 +559,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 319586D4294CEE2C00A80188 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		319586DB294D3EFE00A80188 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 319586DA294D3EFE00A80188 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		319586DD294D3EFE00A80188 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 319586DA294D3EFE00A80188 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		319586DF294D3EFE00A80188 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 319586DA294D3EFE00A80188 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		319586E1294D3EFE00A80188 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 319586DA294D3EFE00A80188 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

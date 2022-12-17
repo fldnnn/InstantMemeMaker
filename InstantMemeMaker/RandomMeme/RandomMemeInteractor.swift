@@ -20,7 +20,6 @@ class RandomMemeInteractor: PresenterToInteractorRandomMemeProcotol {
                             let response = try JSONDecoder().decode(Response.self, from: data)
                             DispatchQueue.main.async {
                                 guard let allMemes = response.data?.memes else {return}
-                                print(allMemes)
                                 self.randomMemePresenter?.didDataFetch(with: allMemes)
                             }
                         }catch{
